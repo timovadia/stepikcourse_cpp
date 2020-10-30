@@ -1,4 +1,4 @@
-// Console_App_Stepik_yandex.cpp : This file contains the 'main' function. Program execution begins and ends there.
+п»ї// Console_App_Stepik_yandex.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -13,7 +13,7 @@ int main() {
     multimap<string, string> mp;
     int n;
 
-    //ввод
+    //РІРІРѕРґ
     cin >> n;
     cin >> ws;
     for (int i = 0; i < n; i++) {
@@ -34,17 +34,17 @@ int main() {
             }
             else continue;
         }
-        mp.insert(pair<string, string>(w_now, s_eng));//словарь пар лат-анг
+        mp.insert(pair<string, string>(w_now, s_eng));//СЃР»РѕРІР°СЂСЊ РїР°СЂ Р»Р°С‚-Р°РЅРі
         w_now = "";
     }
 
-    //словарь лат-англ
+    //СЃР»РѕРІР°СЂСЊ Р»Р°С‚-Р°РЅРіР»
     map<string, vector<string>> rez;
     for (auto elm : mp) {
         rez[elm.first].push_back(elm.second);
     }
 
-    //вывод
+    //РІС‹РІРѕРґ
     cout << rez.size() << endl;
     for (auto elm : rez) {
         cout << elm.first << " - ";
